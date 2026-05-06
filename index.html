@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Netlify Identity Widget — required for CMS email invite & login redirect -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -960,6 +962,18 @@ document.getElementById('langSwitcher').addEventListener('change',function(){
 
 // ─── LOAD CMS CONTENT ON PAGE LOAD ───
 loadCMSContent();
+</script>
+<!-- Netlify Identity: redirect to /admin/ after email confirmation or login -->
+<script>
+  if(window.netlifyIdentity){
+    window.netlifyIdentity.on("init",function(user){
+      if(!user){
+        window.netlifyIdentity.on("login",function(){
+          document.location.href="/admin/";
+        });
+      }
+    });
+  }
 </script>
 </body>
 </html>
