@@ -1,0 +1,160 @@
+{
+  "brand": {
+    "name": "EcoPack Studio",
+    "tagline": "Premium Custom Packaging, Crafted for Your Brand",
+    "email": "hello@ecopackstudio.com",
+    "phone": "+86 138-0000-0000",
+    "address": "Shenzhen, Guangdong, China"
+  },
+  "hero": {
+    "badge": "FSC & ISO 9001 Certified Manufacturer",
+    "title": "Premium Custom Packaging, <em>Crafted</em> for Your Brand",
+    "subtitle": "We design and manufacture eco-friendly custom packaging that elevates your brand experience. From concept to delivery, every box tells your story.",
+    "stat1_num": "10+",
+    "stat1_label": "Years Experience",
+    "stat2_num": "50K+",
+    "stat2_label": "Boxes Monthly",
+    "stat3_num": "100",
+    "stat3_label": "MOQ (pcs)",
+    "cta1": "Get a Free Quote",
+    "cta2": "Explore Products",
+    "slides": [
+      { "image": "https://images.unsplash.com/photo-1607082349566-187342175e2f?w=1920&q=80", "alt": "Premium custom packaging boxes displayed elegantly" },
+      { "image": "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=1920&q=80", "alt": "Eco-friendly kraft paper packaging" },
+      { "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1920&q=80", "alt": "Luxury gift box manufacturing" }
+    ]
+  },
+  "advantages": {
+    "tag": "Why Choose Us",
+    "title": "Built on Expertise, Driven by Sustainability",
+    "desc": "Three pillars that make EcoPack Studio the trusted partner for brands worldwide.",
+    "items": [
+      {
+        "title": "10+ Years Factory Expertise",
+        "desc": "A decade of precision manufacturing, serving over 2,000 brands globally. Our experienced team transforms your vision into tangible packaging excellence with unmatched consistency."
+      },
+      {
+        "title": "100% Eco-Friendly Materials",
+        "desc": "FSC-certified papers, soy-based inks, and biodegradable coatings. Every material we use is chosen to protect both your brand reputation and our planet's future."
+      },
+      {
+        "title": "Low MOQ & Rapid Delivery",
+        "desc": "Start with just 100 pieces. Samples ready in 3–5 business days, bulk production in 10–15 days. We move at the speed your business demands."
+      }
+    ]
+  },
+  "products": {
+    "tag": "Our Products",
+    "title": "Custom Packaging Solutions for Every Need",
+    "items": [
+      {
+        "name": "Kraft Paper Box",
+        "material": "300gsm Kraft Paper",
+        "desc": "Natural, rustic appeal with superior durability. Fully customizable with embossing, foil stamping, or full-color printing.",
+        "category": "kraft",
+        "badge": "Best Seller",
+        "tags": ["Beauty", "Candles", "Food", "Retail"],
+        "image": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80"
+      },
+      {
+        "name": "Luxury Gift Box",
+        "material": "Rigid Board + Art Paper",
+        "desc": "Rigid construction with premium art paper wrapping. Velvet inserts, magnetic closure, and ribbon options available.",
+        "category": "gift",
+        "badge": "Premium",
+        "tags": ["Jewelry", "Cosmetics", "Premium Gifts"],
+        "image": "https://images.unsplash.com/photo-1549465220-1a8b9238f760?w=800&q=80"
+      },
+      {
+        "name": "Folding Carton",
+        "material": "350gsm C1S Cardboard",
+        "desc": "Cost-effective and space-efficient. Perfect for retail shelves with vibrant full-color offset or digital printing.",
+        "category": "folding",
+        "badge": "",
+        "tags": ["Food", "Pharma", "Electronics"],
+        "image": "https://images.unsplash.com/photo-1589782182703-2aaa69037b5b?w=800&q=80"
+      },
+      {
+        "name": "Magnetic Closure Box",
+        "material": "Greyboard + Specialty Paper",
+        "desc": "Sophisticated flip-top design with hidden magnetic closure. Creates an unforgettable unboxing moment for your customers.",
+        "category": "magnetic",
+        "badge": "",
+        "tags": ["Luxury", "Wine", "Tech"],
+        "image": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=800&q=80"
+      },
+      {
+        "name": "Corrugated Mailer Box",
+        "material": "E/B Flute Corrugated",
+        "desc": "Durable shipping protection meets branded experience. Custom printed inside and out for a memorable delivery.",
+        "category": "corrugated",
+        "badge": "",
+        "tags": ["E-commerce", "Subscription", "D2C"],
+        "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80"
+      },
+      {
+        "name": "Eco Sleeve & Wrap",
+        "material": "Recycled Kraft + Soy Ink",
+        "desc": "Minimalist sleeve packaging made from 100% recycled kraft. The ultimate sustainable packaging choice for conscious brands.",
+        "category": "kraft",
+        "badge": "Eco",
+        "tags": ["Skincare", "Soap", "Tea"],
+        "image": "https://images.unsplash.com/photo-1531956531700-dc0ee0f1f9a5?w=800&q=80"
+      }
+    ]
+  },
+  "cases": {
+    "tag": "Case Studies",
+    "title": "Trusted by Brands That Care",
+    "desc": "A selection of projects that showcase our craft and commitment to excellence.",
+    "items": [
+      {
+        "tag": "Beauty & Skincare",
+        "title": "Sample Work 1",
+        "desc": "Custom rigid gift boxes with soft-touch lamination and gold foil branding for a premium skincare line.",
+        "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&q=80"
+      },
+      {
+        "tag": "Food & Beverage",
+        "title": "Sample Work 2",
+        "desc": "FSC-certified kraft mailer boxes with full-color interior printing for an artisan coffee subscription brand.",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&q=80"
+      },
+      {
+        "tag": "Lifestyle & Fashion",
+        "title": "Sample Work 3",
+        "desc": "Magnetic closure boxes with custom tissue paper and branded stickers for a sustainable fashion label.",
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80"
+      }
+    ]
+  },
+  "about": {
+    "tag": "About Us",
+    "title": "A Factory Built on Craft & Conscience",
+    "p1": "Founded over a decade ago, EcoPack Studio has grown from a small workshop into a full-scale packaging manufacturer serving clients across North America, Europe, and Asia-Pacific.",
+    "p2": "We believe packaging is the first physical touchpoint between a brand and its customer. That's why every box we produce is designed to create a moment of delight — sustainably.",
+    "p3": "Our 8,000 sqm facility houses state-of-the-art printing, die-cutting, and finishing equipment, operated by a team of 120+ skilled craftspeople committed to quality in every detail.",
+    "certs": ["FSC Certified", "ISO 9001", "SEDEX"],
+    "factory_image": "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80",
+    "team": [
+      { "name": "Team Member", "role": "Founder & CEO" },
+      { "name": "Team Member", "role": "Head of Design" },
+      { "name": "Team Member", "role": "Production Manager" },
+      { "name": "Team Member", "role": "Client Success" }
+    ]
+  },
+  "contact": {
+    "tag": "Contact Us",
+    "title": "Let's Create Something Beautiful Together",
+    "info_title": "Ready to Elevate Your Packaging?",
+    "info_desc": "Whether you have a detailed spec sheet or just an idea, our team is here to help bring your vision to life. Reach out and we'll respond within 12 hours.",
+    "form_title": "Get a Free Quote",
+    "form_desc": "Fill out the form below and we'll get back to you within 12 hours with a detailed proposal.",
+    "web3forms_key": "YOUR_ACCESS_KEY_HERE"
+  },
+  "seo": {
+    "title": "EcoPack Studio — Premium Custom Eco-Friendly Packaging | Gift Box Manufacturer",
+    "description": "EcoPack Studio crafts premium custom packaging boxes from eco-friendly materials. Kraft paper packaging, luxury gift boxes, folding cartons. MOQ 100 pcs. FSC & ISO9001 certified manufacturer.",
+    "keywords": "custom packaging, eco-friendly boxes, kraft paper packaging, gift box manufacturer, custom packaging boxes, sustainable packaging, luxury packaging"
+  }
+}

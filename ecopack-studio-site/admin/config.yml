@@ -1,0 +1,142 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Uncomment below if using GitHub backend directly instead of Netlify Identity:
+# backend:
+#   name: github
+#   repo: your-username/your-repo-name
+#   branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+# Single-file data structure
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      # ── Brand & SEO ──
+      - name: "settings"
+        label: "Brand & SEO Settings"
+        file: "content/site.json"
+        description: "Global brand info, contact details, and SEO settings"
+        fields:
+          - label: "Brand"
+            name: "brand"
+            widget: "object"
+            fields:
+              - { label: "Brand Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
+
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Page Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "text" }
+              - { label: "Keywords", name: "keywords", widget: "string" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Title (HTML allowed)", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - { label: "Stat 1 Number", name: "stat1_num", widget: "string" }
+              - { label: "Stat 1 Label", name: "stat1_label", widget: "string" }
+              - { label: "Stat 2 Number", name: "stat2_num", widget: "string" }
+              - { label: "Stat 2 Label", name: "stat2_label", widget: "string" }
+              - { label: "Stat 3 Number", name: "stat3_num", widget: "string" }
+              - { label: "Stat 3 Label", name: "stat3_label", widget: "string" }
+              - { label: "CTA Button 1", name: "cta1", widget: "string" }
+              - { label: "CTA Button 2", name: "cta2", widget: "string" }
+              - label: "Slides"
+                name: "slides"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+          - label: "Advantages Section"
+            name: "advantages"
+            widget: "object"
+            fields:
+              - { label: "Section Tag", name: "tag", widget: "string" }
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Section Description", name: "desc", widget: "text" }
+              - label: "Advantage Items"
+                name: "items"
+                widget: "list"
+                max: 3
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+
+          - label: "Products Section"
+            name: "products"
+            widget: "object"
+            fields:
+              - { label: "Section Tag", name: "tag", widget: "string" }
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Product Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Product Name", name: "name", widget: "string" }
+                  - { label: "Material", name: "material", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+                  - { label: "Category", name: "category", widget: "select", options: ["kraft", "gift", "folding", "magnetic", "corrugated"] }
+                  - { label: "Badge (optional)", name: "badge", widget: "string", required: false }
+                  - { label: "Tags (comma separated)", name: "tags", widget: "list" }
+                  - { label: "Image", name: "image", widget: "image" }
+
+          - label: "Case Studies Section"
+            name: "cases"
+            widget: "object"
+            fields:
+              - { label: "Section Tag", name: "tag", widget: "string" }
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Section Description", name: "desc", widget: "text" }
+              - label: "Case Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Industry Tag", name: "tag", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
+
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Section Tag", name: "tag", widget: "string" }
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Paragraph 1", name: "p1", widget: "text" }
+              - { label: "Paragraph 2", name: "p2", widget: "text" }
+              - { label: "Paragraph 3", name: "p3", widget: "text" }
+              - { label: "Certifications", name: "certs", widget: "list" }
+              - { label: "Factory Image", name: "factory_image", widget: "image" }
+              - label: "Team Members"
+                name: "team"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Role", name: "role", widget: "string" }
+
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Section Tag", name: "tag", widget: "string" }
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Info Title", name: "info_title", widget: "string" }
+              - { label: "Info Description", name: "info_desc", widget: "text" }
+              - { label: "Form Title", name: "form_title", widget: "string" }
+              - { label: "Form Description", name: "form_desc", widget: "text" }
+              - { label: "Web3Forms Access Key", name: "web3forms_key", widget: "string", hint: "Get your free key at https://web3forms.com — form submissions will be sent to the email you register with." }

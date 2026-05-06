@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoPack Studio — Premium Custom Eco-Friendly Packaging | Gift Box Manufacturer</title>
+<meta name="description" content="EcoPack Studio crafts premium custom packaging boxes from eco-friendly materials. Kraft paper packaging, luxury gift boxes, folding cartons. MOQ 100 pcs. FSC & ISO9001 certified manufacturer.">
+<meta name="keywords" content="custom packaging, eco-friendly boxes, kraft paper packaging, gift box manufacturer, custom packaging boxes, sustainable packaging, luxury packaging">
+<meta property="og:title" content="EcoPack Studio — Premium Custom Packaging, Crafted for Your Brand">
+<meta property="og:description" content="Custom eco-friendly packaging boxes. 10+ years manufacturing expertise. MOQ 100 pcs. Sample in 3-5 days.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --c-cream:#F7F3EE;--c-warm:#EDE6DB;--c-kraft:#C4A97D;--c-kraft-light:#D9C9A8;
+  --c-forest:#2C4A3E;--c-forest-deep:#1A3028;--c-charcoal:#2D2D2D;--c-text:#3A3A3A;
+  --c-text-light:#6B6B6B;--c-white:#FFFFFF;--c-accent:#8B6F47;--c-border:#E0D8CC;
+  --c-success:#4A7C5F;
+  --f-display:'DM Serif Display',Georgia,serif;
+  --f-body:'Instrument Sans',system-ui,sans-serif;
+  --nav-h:72px;
+  --section-py:clamp(80px,10vw,140px);
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--f-body);color:var(--c-text);background:var(--c-cream);overflow-x:hidden;line-height:1.7}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,textarea,select{font-family:inherit;font-size:1rem}
+.container{max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,60px)}
+
+/* ─── NAV ─── */
+.nav{position:fixed;top:0;left:0;width:100%;height:var(--nav-h);z-index:1000;transition:background .4s,box-shadow .4s,backdrop-filter .4s}
+.nav.scrolled{background:rgba(247,243,238,.92);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--c-border)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,60px);height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--f-display);font-size:1.35rem;color:var(--c-forest-deep);letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+.nav-logo .leaf{width:28px;height:28px;background:var(--c-forest);border-radius:50% 50% 50% 4px;display:flex;align-items:center;justify-content:center}
+.nav-logo .leaf svg{width:14px;height:14px;fill:var(--c-cream)}
+.nav-links{display:flex;gap:clamp(20px,3vw,40px);align-items:center}
+.nav-links a{font-size:.875rem;font-weight:500;color:var(--c-text-light);transition:color .3s;letter-spacing:.02em;text-transform:uppercase}
+.nav-links a:hover{color:var(--c-forest)}
+.nav-lang{font-size:.8rem;padding:5px 12px;border:1px solid var(--c-border);border-radius:20px;color:var(--c-text-light);transition:all .3s;cursor:pointer;background:transparent}
+.nav-lang:hover{border-color:var(--c-forest);color:var(--c-forest)}
+.nav-cta{font-size:.8rem;padding:10px 24px;background:var(--c-forest);color:var(--c-cream);border-radius:100px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;transition:all .3s}
+.nav-cta:hover{background:var(--c-forest-deep);transform:translateY(-1px);box-shadow:0 4px 20px rgba(44,74,62,.3)}
+.hamburger{display:none;flex-direction:column;gap:5px;width:24px;cursor:pointer}
+.hamburger span{display:block;height:2px;background:var(--c-charcoal);border-radius:2px;transition:all .3s}
+
+/* ─── HERO ─── */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--c-forest-deep)}
+.hero-slider{position:absolute;inset:0;z-index:1}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.hero-slide.active{opacity:1}
+.hero-slide img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,48,40,.82) 0%,rgba(44,74,62,.6) 50%,rgba(26,48,40,.75) 100%);z-index:2}
+.hero-content{position:relative;z-index:3;padding-top:var(--nav-h);width:100%}
+.hero-inner{max-width:1280px;margin:0 auto;padding:clamp(60px,8vw,120px) clamp(20px,4vw,60px)}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border:1px solid rgba(247,243,238,.25);border-radius:100px;color:var(--c-cream);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:clamp(24px,3vw,40px);opacity:0;animation:fadeUp .8s .3s forwards}
+.hero-badge .dot{width:6px;height:6px;background:var(--c-kraft);border-radius:50%;animation:pulse 2s infinite}
+.hero h1{font-family:var(--f-display);font-size:clamp(2.8rem,6vw,5.5rem);color:var(--c-cream);line-height:1.08;max-width:800px;opacity:0;animation:fadeUp .8s .5s forwards}
+.hero h1 em{font-style:italic;color:var(--c-kraft-light)}
+.hero-sub{font-size:clamp(1rem,1.4vw,1.2rem);color:rgba(247,243,238,.7);max-width:520px;margin-top:clamp(16px,2vw,28px);line-height:1.8;opacity:0;animation:fadeUp .8s .7s forwards}
+.hero-stats{display:flex;gap:clamp(32px,5vw,64px);margin-top:clamp(40px,5vw,64px);opacity:0;animation:fadeUp .8s .9s forwards}
+.hero-stat .num{font-family:var(--f-display);font-size:clamp(2rem,3.5vw,3rem);color:var(--c-kraft-light)}
+.hero-stat .label{font-size:.8rem;color:rgba(247,243,238,.5);text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
+.hero-actions{display:flex;gap:16px;margin-top:clamp(40px,5vw,56px);flex-wrap:wrap;opacity:0;animation:fadeUp .8s 1.1s forwards}
+.btn-primary{padding:16px 40px;background:var(--c-kraft);color:var(--c-forest-deep);border-radius:100px;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:all .35s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--c-cream);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.2)}
+.btn-outline{padding:16px 40px;border:1px solid rgba(247,243,238,.3);color:var(--c-cream);border-radius:100px;font-weight:600;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:all .35s}
+.btn-outline:hover{border-color:var(--c-cream);background:rgba(247,243,238,.1)}
+.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(247,243,238,.4);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase}
+.hero-scroll .line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(247,243,238,.4),transparent);animation:scrollLine 2s infinite}
+.slider-dots{position:absolute;bottom:100px;right:clamp(20px,4vw,60px);z-index:3;display:flex;flex-direction:column;gap:8px}
+.slider-dots button{width:8px;height:8px;border-radius:50%;background:rgba(247,243,238,.3);transition:all .4s;border:none;cursor:pointer;padding:0}
+.slider-dots button.active{background:var(--c-kraft);height:24px;border-radius:4px}
+
+/* ─── SECTION COMMONS ─── */
+.section-tag{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--c-accent);font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section-tag::before{content:'';width:24px;height:1px;background:var(--c-accent)}
+.section-title{font-family:var(--f-display);font-size:clamp(2rem,4vw,3.2rem);color:var(--c-forest-deep);line-height:1.15;max-width:600px}
+.section-desc{font-size:1.05rem;color:var(--c-text-light);max-width:520px;margin-top:16px;line-height:1.8}
+
+/* ─── ADVANTAGES ─── */
+.advantages{padding:var(--section-py) 0;background:var(--c-cream);position:relative}
+.advantages::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:80px;height:1px;background:var(--c-border)}
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px);margin-top:clamp(48px,6vw,80px)}
+.adv-card{padding:clamp(32px,3vw,48px);background:var(--c-white);border-radius:16px;border:1px solid var(--c-border);transition:all .45s;position:relative;overflow:hidden}
+.adv-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--c-forest);transform:scaleX(0);transform-origin:left;transition:transform .45s}
+.adv-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.06)}
+.adv-card:hover::after{transform:scaleX(1)}
+.adv-icon{width:56px;height:56px;background:linear-gradient(135deg,var(--c-forest),var(--c-forest-deep));border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:24px}
+.adv-icon svg{width:24px;height:24px;fill:none;stroke:var(--c-cream);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.adv-card h3{font-family:var(--f-display);font-size:1.35rem;color:var(--c-forest-deep);margin-bottom:12px}
+.adv-card p{font-size:.95rem;color:var(--c-text-light);line-height:1.7}
+.adv-card .adv-num{position:absolute;top:24px;right:28px;font-family:var(--f-display);font-size:3.5rem;color:rgba(0,0,0,.03);line-height:1}
+
+/* ─── PRODUCTS ─── */
+.products{padding:var(--section-py) 0;background:var(--c-warm)}
+.products-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px}
+.products-filters{display:flex;gap:8px;flex-wrap:wrap}
+.products-filters button{padding:8px 20px;border-radius:100px;font-size:.8rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--c-border);color:var(--c-text-light);background:transparent;transition:all .3s}
+.products-filters button.active,.products-filters button:hover{background:var(--c-forest);color:var(--c-cream);border-color:var(--c-forest)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:clamp(20px,2vw,32px);margin-top:clamp(40px,5vw,64px)}
+.product-card{background:var(--c-white);border-radius:16px;overflow:hidden;transition:all .45s;border:1px solid transparent;cursor:pointer}
+.product-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.08);border-color:var(--c-kraft)}
+.product-img{aspect-ratio:4/3;overflow:hidden;position:relative;background:var(--c-cream)}
+.product-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.product-card:hover .product-img img{transform:scale(1.06)}
+.product-img .product-badge{position:absolute;top:16px;left:16px;padding:6px 14px;background:var(--c-forest);color:var(--c-cream);font-size:.7rem;font-weight:600;border-radius:100px;letter-spacing:.06em;text-transform:uppercase}
+.product-info{padding:clamp(20px,2vw,28px)}
+.product-info h3{font-family:var(--f-display);font-size:1.2rem;color:var(--c-forest-deep);margin-bottom:8px}
+.product-info .material{font-size:.8rem;color:var(--c-accent);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:10px}
+.product-info p{font-size:.9rem;color:var(--c-text-light);line-height:1.7;margin-bottom:16px}
+.product-tags{display:flex;gap:6px;flex-wrap:wrap}
+.product-tags span{padding:4px 12px;background:var(--c-cream);color:var(--c-text-light);font-size:.72rem;border-radius:100px;font-weight:500}
+
+/* ─── CASES ─── */
+.cases{padding:var(--section-py) 0;background:var(--c-cream)}
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2vw,32px);margin-top:clamp(48px,6vw,80px)}
+.case-card{border-radius:16px;overflow:hidden;position:relative;aspect-ratio:3/4;cursor:pointer;group:true}
+.case-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.case-card:hover img{transform:scale(1.05)}
+.case-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,48,40,.9) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(24px,3vw,36px);transition:all .4s}
+.case-overlay .case-tag{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c-kraft-light);margin-bottom:8px}
+.case-overlay h3{font-family:var(--f-display);font-size:1.3rem;color:var(--c-cream);margin-bottom:8px}
+.case-overlay p{font-size:.85rem;color:rgba(247,243,238,.6);line-height:1.6;max-height:0;overflow:hidden;transition:max-height .4s}
+.case-card:hover .case-overlay p{max-height:80px}
+
+/* ─── ABOUT ─── */
+.about{padding:var(--section-py) 0;background:var(--c-forest-deep);color:var(--c-cream);position:relative;overflow:hidden}
+.about::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:rgba(196,169,125,.05)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:center;margin-top:clamp(48px,6vw,80px)}
+.about-images{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.about-images .img-box{border-radius:12px;overflow:hidden;background:rgba(247,243,238,.08);aspect-ratio:1;display:flex;align-items:center;justify-content:center;color:rgba(247,243,238,.2);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;border:1px dashed rgba(247,243,238,.15)}
+.about-images .img-box:first-child{grid-row:span 2;aspect-ratio:auto}
+.about-images .img-box img{width:100%;height:100%;object-fit:cover}
+.about-text .section-tag{color:var(--c-kraft-light)}
+.about-text .section-tag::before{background:var(--c-kraft-light)}
+.about-text .section-title{color:var(--c-cream)}
+.about-text p{color:rgba(247,243,238,.65);margin-top:20px;line-height:1.8}
+.about-certs{display:flex;gap:16px;margin-top:32px}
+.about-certs .cert{padding:12px 24px;border:1px solid rgba(247,243,238,.15);border-radius:10px;font-size:.8rem;font-weight:600;color:var(--c-kraft-light);letter-spacing:.06em}
+.team-section{margin-top:clamp(60px,8vw,100px);padding-top:clamp(60px,8vw,100px);border-top:1px solid rgba(247,243,238,.1)}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
+.team-card{text-align:center}
+.team-card .avatar{width:100px;height:100px;border-radius:50%;background:rgba(247,243,238,.08);margin:0 auto 16px;display:flex;align-items:center;justify-content:center;color:rgba(247,243,238,.2);font-size:.7rem;border:1px dashed rgba(247,243,238,.15)}
+.team-card h4{font-family:var(--f-display);font-size:1.05rem;color:var(--c-cream)}
+.team-card span{font-size:.8rem;color:rgba(247,243,238,.4)}
+
+/* ─── CONTACT ─── */
+.contact{padding:var(--section-py) 0;background:var(--c-cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(40px,6vw,100px);margin-top:clamp(48px,6vw,80px)}
+.contact-info h3{font-family:var(--f-display);font-size:1.6rem;color:var(--c-forest-deep);margin-bottom:20px}
+.contact-info p{color:var(--c-text-light);margin-bottom:32px;line-height:1.8}
+.contact-detail{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.contact-detail .icon{width:44px;height:44px;background:var(--c-warm);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-detail .icon svg{width:18px;height:18px;fill:none;stroke:var(--c-forest);stroke-width:1.5}
+.contact-detail div{font-size:.95rem}
+.contact-detail .label{font-size:.72rem;color:var(--c-text-light);text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px}
+.contact-form{background:var(--c-white);padding:clamp(32px,4vw,56px);border-radius:20px;border:1px solid var(--c-border);box-shadow:0 8px 40px rgba(0,0,0,.04)}
+.contact-form h3{font-family:var(--f-display);font-size:1.5rem;color:var(--c-forest-deep);margin-bottom:8px}
+.contact-form>p{font-size:.9rem;color:var(--c-text-light);margin-bottom:32px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:.78rem;font-weight:600;color:var(--c-text);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:14px 18px;border:1px solid var(--c-border);border-radius:10px;background:var(--c-cream);transition:all .3s;color:var(--c-text);font-size:.95rem}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--c-forest);box-shadow:0 0 0 3px rgba(44,74,62,.08)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-check{display:flex;align-items:center;gap:10px;margin-bottom:24px;cursor:pointer}
+.form-check input[type=checkbox]{width:20px;height:20px;accent-color:var(--c-forest);cursor:pointer}
+.form-check span{font-size:.9rem;color:var(--c-text-light)}
+.btn-submit{width:100%;padding:18px;background:var(--c-forest);color:var(--c-cream);border:none;border-radius:12px;font-size:1rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:all .35s;cursor:pointer}
+.btn-submit:hover{background:var(--c-forest-deep);transform:translateY(-2px);box-shadow:0 8px 32px rgba(44,74,62,.25)}
+
+/* ─── FOOTER ─── */
+.footer{background:var(--c-charcoal);color:rgba(255,255,255,.5);padding:clamp(60px,6vw,80px) 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(32px,4vw,60px);margin-bottom:clamp(40px,5vw,60px)}
+.footer-brand .logo{font-family:var(--f-display);font-size:1.3rem;color:var(--c-cream);margin-bottom:16px}
+.footer-brand p{font-size:.9rem;line-height:1.7;max-width:300px}
+.footer h4{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:rgba(255,255,255,.3);margin-bottom:20px}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:10px}
+.footer ul a{font-size:.9rem;transition:color .3s}
+.footer ul a:hover{color:var(--c-cream)}
+.footer-social{display:flex;gap:12px;margin-top:20px}
+.footer-social a{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;transition:all .3s}
+.footer-social a:hover{border-color:var(--c-kraft);background:rgba(196,169,125,.1)}
+.footer-social svg{width:16px;height:16px;fill:rgba(255,255,255,.5)}
+.footer-bottom{padding-top:32px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:.8rem}
+
+/* ─── MOBILE NAV ─── */
+.mobile-menu{position:fixed;inset:0;background:var(--c-cream);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{font-family:var(--f-display);font-size:1.8rem;color:var(--c-forest-deep)}
+.mobile-close{position:absolute;top:24px;right:24px;font-size:1.5rem;cursor:pointer;color:var(--c-charcoal)}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes scrollLine{0%{opacity:1;transform:scaleY(1)}100%{opacity:0;transform:scaleY(0);transform-origin:bottom}}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s,transform .7s}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .adv-grid{grid-template-columns:1fr}
+  .cases-grid{grid-template-columns:1fr 1fr}
+  .about-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .nav-links,.nav-lang,.nav-cta-desktop{display:none}
+  .hamburger{display:flex}
+  .hero h1{font-size:clamp(2.2rem,8vw,3.2rem)}
+  .hero-stats{flex-direction:column;gap:20px}
+  .products-grid{grid-template-columns:1fr}
+  .cases-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .slider-dots{display:none}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .hero-scroll{display:none}
+}
+</style>
+</head>
+<body>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo"><span class="leaf"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75"/></svg></span> EcoPack Studio</a>
+    <div class="nav-links">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#products" data-i18n="nav.products">Products</a>
+      <a href="#cases" data-i18n="nav.cases">Case Studies</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <select class="nav-lang" id="langSwitcher" aria-label="Language">
+        <option value="en">EN</option>
+        <option value="zh">中文</option>
+        <option value="es">ES</option>
+        <option value="de">DE</option>
+      </select>
+      <a href="#contact" class="nav-cta nav-cta-desktop" data-i18n="nav.quote">Get Quote</a>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-close" id="mobileClose">&times;</div>
+  <a href="#home" data-i18n="nav.home">Home</a>
+  <a href="#products" data-i18n="nav.products">Products</a>
+  <a href="#cases" data-i18n="nav.cases">Case Studies</a>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <a href="#contact" class="nav-cta" data-i18n="nav.quote">Get Quote</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-slider">
+    <div class="hero-slide active">
+      <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=1920&q=80" alt="Premium custom packaging boxes displayed elegantly">
+    </div>
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=1920&q=80" alt="Eco-friendly kraft paper packaging">
+    </div>
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1920&q=80" alt="Luxury gift box manufacturing">
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-inner">
+      <div class="hero-badge"><span class="dot"></span> <span data-i18n="hero.badge">FSC & ISO 9001 Certified Manufacturer</span></div>
+      <h1 data-i18n="hero.title">Premium Custom Packaging, <em>Crafted</em> for Your Brand</h1>
+      <p class="hero-sub" data-i18n="hero.sub">We design and manufacture eco-friendly custom packaging that elevates your brand experience. From concept to delivery, every box tells your story.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">10+</div><div class="label" data-i18n="hero.stat1">Years Experience</div></div>
+        <div class="hero-stat"><div class="num">50K+</div><div class="label" data-i18n="hero.stat2">Boxes Monthly</div></div>
+        <div class="hero-stat"><div class="num">100</div><div class="label" data-i18n="hero.stat3">MOQ (pcs)</div></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary" data-i18n="hero.cta1">Get a Free Quote <span>&rarr;</span></a>
+        <a href="#products" class="btn-outline" data-i18n="hero.cta2">Explore Products</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider-dots" id="sliderDots">
+    <button class="active" data-slide="0"></button>
+    <button data-slide="1"></button>
+    <button data-slide="2"></button>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="line"></div></div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="advantages" id="advantages">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag" data-i18n="adv.tag">Why Choose Us</div>
+      <h2 class="section-title" data-i18n="adv.title">Built on Expertise, Driven by Sustainability</h2>
+      <p class="section-desc" data-i18n="adv.desc">Three pillars that make EcoPack Studio the trusted partner for brands worldwide.</p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-card reveal">
+        <span class="adv-num">01</span>
+        <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3 data-i18n="adv.card1.title">10+ Years Factory Expertise</h3>
+        <p data-i18n="adv.card1.desc">A decade of precision manufacturing, serving over 2,000 brands globally. Our experienced team transforms your vision into tangible packaging excellence with unmatched consistency.</p>
+      </div>
+      <div class="adv-card reveal">
+        <span class="adv-num">02</span>
+        <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3 data-i18n="adv.card2.title">100% Eco-Friendly Materials</h3>
+        <p data-i18n="adv.card2.desc">FSC-certified papers, soy-based inks, and biodegradable coatings. Every material we use is chosen to protect both your brand reputation and our planet's future.</p>
+      </div>
+      <div class="adv-card reveal">
+        <span class="adv-num">03</span>
+        <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3 data-i18n="adv.card3.title">Low MOQ & Rapid Delivery</h3>
+        <p data-i18n="adv.card3.desc">Start with just 100 pieces. Samples ready in 3–5 business days, bulk production in 10–15 days. We move at the speed your business demands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="products-head reveal">
+      <div>
+        <div class="section-tag" data-i18n="prod.tag">Our Products</div>
+        <h2 class="section-title" data-i18n="prod.title">Custom Packaging Solutions for Every Need</h2>
+      </div>
+      <div class="products-filters">
+        <button class="active" data-filter="all" data-i18n="prod.filter.all">All</button>
+        <button data-filter="kraft" data-i18n="prod.filter.kraft">Kraft</button>
+        <button data-filter="gift" data-i18n="prod.filter.gift">Gift Box</button>
+        <button data-filter="folding" data-i18n="prod.filter.folding">Folding</button>
+        <button data-filter="magnetic" data-i18n="prod.filter.magnetic">Magnetic</button>
+        <button data-filter="corrugated" data-i18n="prod.filter.corrugated">Shipping</button>
+      </div>
+    </div>
+    <div class="products-grid">
+      <!-- Product 1 -->
+      <div class="product-card reveal" data-category="kraft">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80" alt="Kraft Paper Packaging Box" loading="lazy">
+          <span class="product-badge">Best Seller</span>
+        </div>
+        <div class="product-info">
+          <div class="material">300gsm Kraft Paper</div>
+          <h3>Kraft Paper Box</h3>
+          <p>Natural, rustic appeal with superior durability. Fully customizable with embossing, foil stamping, or full-color printing.</p>
+          <div class="product-tags"><span>Beauty</span><span>Candles</span><span>Food</span><span>Retail</span></div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card reveal" data-category="gift">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1549465220-1a8b9238f760?w=800&q=80" alt="Luxury Gift Box" loading="lazy">
+          <span class="product-badge">Premium</span>
+        </div>
+        <div class="product-info">
+          <div class="material">Rigid Board + Art Paper</div>
+          <h3>Luxury Gift Box</h3>
+          <p>Rigid construction with premium art paper wrapping. Velvet inserts, magnetic closure, and ribbon options available.</p>
+          <div class="product-tags"><span>Jewelry</span><span>Cosmetics</span><span>Premium Gifts</span></div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card reveal" data-category="folding">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1589782182703-2aaa69037b5b?w=800&q=80" alt="Folding Carton" loading="lazy">
+        </div>
+        <div class="product-info">
+          <div class="material">350gsm C1S Cardboard</div>
+          <h3>Folding Carton</h3>
+          <p>Cost-effective and space-efficient. Perfect for retail shelves with vibrant full-color offset or digital printing.</p>
+          <div class="product-tags"><span>Food</span><span>Pharma</span><span>Electronics</span></div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card reveal" data-category="magnetic">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=800&q=80" alt="Magnetic Closure Box" loading="lazy">
+        </div>
+        <div class="product-info">
+          <div class="material">Greyboard + Specialty Paper</div>
+          <h3>Magnetic Closure Box</h3>
+          <p>Sophisticated flip-top design with hidden magnetic closure. Creates an unforgettable unboxing moment for your customers.</p>
+          <div class="product-tags"><span>Luxury</span><span>Wine</span><span>Tech</span></div>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="product-card reveal" data-category="corrugated">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80" alt="Corrugated Shipping Box" loading="lazy">
+        </div>
+        <div class="product-info">
+          <div class="material">E/B Flute Corrugated</div>
+          <h3>Corrugated Mailer Box</h3>
+          <p>Durable shipping protection meets branded experience. Custom printed inside and out for a memorable delivery.</p>
+          <div class="product-tags"><span>E-commerce</span><span>Subscription</span><span>D2C</span></div>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div class="product-card reveal" data-category="kraft">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1531956531700-dc0ee0f1f9a5?w=800&q=80" alt="Eco Sleeve Packaging" loading="lazy">
+          <span class="product-badge">Eco</span>
+        </div>
+        <div class="product-info">
+          <div class="material">Recycled Kraft + Soy Ink</div>
+          <h3>Eco Sleeve & Wrap</h3>
+          <p>Minimalist sleeve packaging made from 100% recycled kraft. The ultimate sustainable packaging choice for conscious brands.</p>
+          <div class="product-tags"><span>Skincare</span><span>Soap</span><span>Tea</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="cases" id="cases">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag" data-i18n="cases.tag">Case Studies</div>
+      <h2 class="section-title" data-i18n="cases.title">Trusted by Brands That Care</h2>
+      <p class="section-desc" data-i18n="cases.desc">A selection of projects that showcase our craft and commitment to excellence.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card reveal">
+        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&q=80" alt="Sample Work 1" loading="lazy">
+        <div class="case-overlay">
+          <span class="case-tag">Beauty & Skincare</span>
+          <h3>Sample Work 1</h3>
+          <p>Custom rigid gift boxes with soft-touch lamination and gold foil branding for a premium skincare line.</p>
+        </div>
+      </div>
+      <div class="case-card reveal">
+        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&q=80" alt="Sample Work 2" loading="lazy">
+        <div class="case-overlay">
+          <span class="case-tag">Food & Beverage</span>
+          <h3>Sample Work 2</h3>
+          <p>FSC-certified kraft mailer boxes with full-color interior printing for an artisan coffee subscription brand.</p>
+        </div>
+      </div>
+      <div class="case-card reveal">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80" alt="Sample Work 3" loading="lazy">
+        <div class="case-overlay">
+          <span class="case-tag">Lifestyle & Fashion</span>
+          <h3>Sample Work 3</h3>
+          <p>Magnetic closure boxes with custom tissue paper and branded stickers for a sustainable fashion label.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images reveal">
+        <div class="img-box">
+          <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80" alt="Factory interior" loading="lazy">
+        </div>
+        <div class="img-box">Photo Placeholder</div>
+        <div class="img-box">Photo Placeholder</div>
+      </div>
+      <div class="about-text reveal">
+        <div class="section-tag" data-i18n="about.tag">About Us</div>
+        <h2 class="section-title" data-i18n="about.title">A Factory Built on Craft & Conscience</h2>
+        <p data-i18n="about.p1">Founded over a decade ago, EcoPack Studio has grown from a small workshop into a full-scale packaging manufacturer serving clients across North America, Europe, and Asia-Pacific.</p>
+        <p data-i18n="about.p2">We believe packaging is the first physical touchpoint between a brand and its customer. That's why every box we produce is designed to create a moment of delight — sustainably.</p>
+        <p data-i18n="about.p3">Our 8,000 sqm facility houses state-of-the-art printing, die-cutting, and finishing equipment, operated by a team of 120+ skilled craftspeople committed to quality in every detail.</p>
+        <div class="about-certs">
+          <div class="cert">FSC Certified</div>
+          <div class="cert">ISO 9001</div>
+          <div class="cert">SEDEX</div>
+        </div>
+      </div>
+    </div>
+    <div class="team-section reveal">
+      <div class="section-tag" style="color:var(--c-kraft-light)"><span style="display:inline-block;width:24px;height:1px;background:var(--c-kraft-light);margin-right:10px"></span> Our Team</div>
+      <h3 class="section-title" style="color:var(--c-cream);font-size:1.6rem" data-i18n="about.team.title">The People Behind Your Packaging</h3>
+      <div class="team-grid">
+        <div class="team-card"><div class="avatar">Photo</div><h4>Team Member</h4><span>Founder & CEO</span></div>
+        <div class="team-card"><div class="avatar">Photo</div><h4>Team Member</h4><span>Head of Design</span></div>
+        <div class="team-card"><div class="avatar">Photo</div><h4>Team Member</h4><span>Production Manager</span></div>
+        <div class="team-card"><div class="avatar">Photo</div><h4>Team Member</h4><span>Client Success</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag" data-i18n="contact.tag">Contact Us</div>
+      <h2 class="section-title" data-i18n="contact.title">Let's Create Something Beautiful Together</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3 data-i18n="contact.info.title">Ready to Elevate Your Packaging?</h3>
+        <p data-i18n="contact.info.desc">Whether you have a detailed spec sheet or just an idea, our team is here to help bring your vision to life. Reach out and we'll respond within 12 hours.</p>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></div>
+          <div><div class="label">Email</div><strong data-cms="brand.email">hello@ecopackstudio.com</strong></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="label">Phone</div><strong data-cms="brand.phone">+86 138-0000-0000</strong></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="label">Address</div><strong data-cms="brand.address">Shenzhen, Guangdong, China</strong></div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3 data-i18n="form.title">Get a Free Quote</h3>
+        <p data-i18n="form.desc">Fill out the form below and we'll get back to you within 12 hours with a detailed proposal.</p>
+        <form id="quoteForm" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key — replace with your own from https://web3forms.com -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <!-- Honeypot spam protection (hidden from users) -->
+          <input type="checkbox" name="botcheck" style="display:none">
+          <!-- Email subject line -->
+          <input type="hidden" name="subject" value="New Packaging Inquiry from Website">
+          <!-- Redirect after submission -->
+          <input type="hidden" name="redirect" value="">
+          <!-- From name -->
+          <input type="hidden" name="from_name" value="EcoPack Studio Website">
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="form.name">Your Name *</label><input type="text" name="name" required placeholder="John Doe"></div>
+            <div class="form-group"><label data-i18n="form.email">Email Address *</label><input type="email" name="email" required placeholder="john@company.com"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="form.company">Company Name</label><input type="text" name="company" placeholder="Your Company"></div>
+            <div class="form-group"><label data-i18n="form.qty">Quantity (pcs)</label><input type="number" name="quantity" placeholder="e.g. 500" min="100"></div>
+          </div>
+          <div class="form-group">
+            <label data-i18n="form.product">Product Requirements *</label>
+            <textarea name="requirements" required placeholder="Please describe your packaging needs: box type, dimensions, material preferences, printing requirements, etc."></textarea>
+          </div>
+          <label class="form-check">
+            <input type="checkbox" name="sample_requested" value="Yes">
+            <span data-i18n="form.sample">I'd like to request a sample (3-5 business days)</span>
+          </label>
+          <button type="submit" class="btn-submit" data-i18n="form.submit">Send Inquiry &rarr;</button>
+          <div id="formResult" style="margin-top:16px;text-align:center;font-size:.9rem;display:none"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">EcoPack Studio</div>
+        <p>Premium custom packaging crafted with eco-friendly materials. Your brand deserves packaging that makes a statement — and protects the planet.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z M2 9h4v12H2z M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#products">Kraft Paper Box</a></li>
+          <li><a href="#products">Luxury Gift Box</a></li>
+          <li><a href="#products">Folding Carton</a></li>
+          <li><a href="#products">Magnetic Box</a></li>
+          <li><a href="#products">Corrugated Mailer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#cases">Case Studies</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#contact">Get a Quote</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 EcoPack Studio. All rights reserved.</span>
+      <span>Crafted with care for brands & the planet.</span>
+    </div>
+  </div>
+</footer>
+<script>
+// ─── CMS CONTENT LOADER ───
+// Loads content from content/site.json (managed by Decap CMS) and injects into the page
+async function loadCMSContent(){
+  try{
+    const res=await fetch('content/site.json');
+    if(!res.ok) return;
+    const d=await res.json();
+
+    // SEO
+    if(d.seo){
+      document.title=d.seo.title||document.title;
+      const metaDesc=document.querySelector('meta[name="description"]');
+      if(metaDesc&&d.seo.description) metaDesc.content=d.seo.description;
+      const metaKw=document.querySelector('meta[name="keywords"]');
+      if(metaKw&&d.seo.keywords) metaKw.content=d.seo.keywords;
+    }
+
+    // Brand
+    if(d.brand){
+      document.querySelectorAll('.nav-logo').forEach(el=>{
+        const leaf=el.querySelector('.leaf');
+        el.textContent='';
+        if(leaf) el.appendChild(leaf);
+        el.append(' '+d.brand.name);
+      });
+      document.querySelectorAll('.footer-brand .logo').forEach(el=>el.textContent=d.brand.name);
+      // Contact details
+      const contactEmail=document.querySelector('[data-cms="brand.email"]');
+      const contactPhone=document.querySelector('[data-cms="brand.phone"]');
+      const contactAddr=document.querySelector('[data-cms="brand.address"]');
+      if(contactEmail) contactEmail.textContent=d.brand.email;
+      if(contactPhone) contactPhone.textContent=d.brand.phone;
+      if(contactAddr) contactAddr.textContent=d.brand.address;
+    }
+
+    // Hero
+    if(d.hero){
+      const heroTitle=document.querySelector('.hero h1');
+      if(heroTitle) heroTitle.innerHTML=d.hero.title;
+      const heroSub=document.querySelector('.hero-sub');
+      if(heroSub) heroSub.textContent=d.hero.subtitle;
+      const heroBadge=document.querySelector('.hero-badge');
+      if(heroBadge){
+        const dot=heroBadge.querySelector('.dot');
+        heroBadge.textContent='';
+        if(dot) heroBadge.appendChild(dot);
+        heroBadge.append(' '+d.hero.badge);
+      }
+      // Stats
+      const stats=document.querySelectorAll('.hero-stat');
+      if(stats[0]){stats[0].querySelector('.num').textContent=d.hero.stat1_num;stats[0].querySelector('.label').textContent=d.hero.stat1_label}
+      if(stats[1]){stats[1].querySelector('.num').textContent=d.hero.stat2_num;stats[1].querySelector('.label').textContent=d.hero.stat2_label}
+      if(stats[2]){stats[2].querySelector('.num').textContent=d.hero.stat3_num;stats[2].querySelector('.label').textContent=d.hero.stat3_label}
+      // CTA buttons
+      const cta1=document.querySelector('.hero-actions .btn-primary');
+      const cta2=document.querySelector('.hero-actions .btn-outline');
+      if(cta1) cta1.innerHTML=d.hero.cta1+' <span>&rarr;</span>';
+      if(cta2) cta2.textContent=d.hero.cta2;
+      // Slides
+      if(d.hero.slides&&d.hero.slides.length){
+        const slider=document.querySelector('.hero-slider');
+        const dotsC=document.getElementById('sliderDots');
+        slider.innerHTML='';dotsC.innerHTML='';
+        d.hero.slides.forEach((s,i)=>{
+          const div=document.createElement('div');
+          div.className='hero-slide'+(i===0?' active':'');
+          div.innerHTML='<img src="'+s.image+'" alt="'+s.alt+'">';
+          slider.appendChild(div);
+          const btn=document.createElement('button');
+          btn.dataset.slide=i;if(i===0)btn.className='active';
+          dotsC.appendChild(btn);
+        });
+        initSlider();
+      }
+    }
+
+    // Advantages
+    if(d.advantages){
+      const advSection=document.getElementById('advantages');
+      advSection.querySelector('.section-tag').textContent=d.advantages.tag;
+      advSection.querySelector('.section-title').textContent=d.advantages.title;
+      advSection.querySelector('.section-desc').textContent=d.advantages.desc;
+      const advCards=advSection.querySelectorAll('.adv-card');
+      d.advantages.items.forEach((item,i)=>{
+        if(advCards[i]){
+          advCards[i].querySelector('h3').textContent=item.title;
+          advCards[i].querySelector('p').textContent=item.desc;
+        }
+      });
+    }
+
+    // Products
+    if(d.products&&d.products.items){
+      const prodSection=document.getElementById('products');
+      prodSection.querySelector('.section-tag').textContent=d.products.tag;
+      prodSection.querySelector('.section-title').textContent=d.products.title;
+      const grid=prodSection.querySelector('.products-grid');
+      grid.innerHTML='';
+      d.products.items.forEach(p=>{
+        const card=document.createElement('div');
+        card.className='product-card reveal visible';
+        card.dataset.category=p.category;
+        card.innerHTML=
+          '<div class="product-img">'+
+            '<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">'+
+            (p.badge?'<span class="product-badge">'+p.badge+'</span>':'')+
+          '</div>'+
+          '<div class="product-info">'+
+            '<div class="material">'+p.material+'</div>'+
+            '<h3>'+p.name+'</h3>'+
+            '<p>'+p.desc+'</p>'+
+            '<div class="product-tags">'+p.tags.map(t=>'<span>'+t+'</span>').join('')+'</div>'+
+          '</div>';
+        grid.appendChild(card);
+      });
+      initProductFilter();
+    }
+
+    // Cases
+    if(d.cases&&d.cases.items){
+      const casesSection=document.getElementById('cases');
+      casesSection.querySelector('.section-tag').textContent=d.cases.tag;
+      casesSection.querySelector('.section-title').textContent=d.cases.title;
+      casesSection.querySelector('.section-desc').textContent=d.cases.desc;
+      const grid=casesSection.querySelector('.cases-grid');
+      grid.innerHTML='';
+      d.cases.items.forEach(c=>{
+        const card=document.createElement('div');
+        card.className='case-card reveal visible';
+        card.innerHTML=
+          '<img src="'+c.image+'" alt="'+c.title+'" loading="lazy">'+
+          '<div class="case-overlay">'+
+            '<span class="case-tag">'+c.tag+'</span>'+
+            '<h3>'+c.title+'</h3>'+
+            '<p>'+c.desc+'</p>'+
+          '</div>';
+        grid.appendChild(card);
+      });
+    }
+
+    // About
+    if(d.about){
+      const aboutSection=document.getElementById('about');
+      aboutSection.querySelector('.about-text .section-tag').textContent=d.about.tag;
+      aboutSection.querySelector('.about-text .section-title').textContent=d.about.title;
+      const ps=aboutSection.querySelectorAll('.about-text p');
+      if(ps[0]) ps[0].textContent=d.about.p1;
+      if(ps[1]) ps[1].textContent=d.about.p2;
+      if(ps[2]) ps[2].textContent=d.about.p3;
+      // Certs
+      const certsDiv=aboutSection.querySelector('.about-certs');
+      if(certsDiv&&d.about.certs){
+        certsDiv.innerHTML=d.about.certs.map(c=>'<div class="cert">'+c+'</div>').join('');
+      }
+      // Factory image
+      const factoryImg=aboutSection.querySelector('.about-images .img-box:first-child img');
+      if(factoryImg&&d.about.factory_image) factoryImg.src=d.about.factory_image;
+      // Team
+      if(d.about.team){
+        const teamGrid=aboutSection.querySelector('.team-grid');
+        teamGrid.innerHTML=d.about.team.map(m=>
+          '<div class="team-card"><div class="avatar">Photo</div><h4>'+m.name+'</h4><span>'+m.role+'</span></div>'
+        ).join('');
+      }
+    }
+
+    // Contact
+    if(d.contact){
+      const contactSection=document.getElementById('contact');
+      contactSection.querySelector('.section-tag').textContent=d.contact.tag;
+      contactSection.querySelector('.section-title').textContent=d.contact.title;
+      contactSection.querySelector('.contact-info h3').textContent=d.contact.info_title;
+      contactSection.querySelector('.contact-info p').textContent=d.contact.info_desc;
+      contactSection.querySelector('.contact-form h3').textContent=d.contact.form_title;
+      contactSection.querySelector('.contact-form>p').textContent=d.contact.form_desc;
+      // Web3Forms access key
+      if(d.contact.web3forms_key){
+        const keyInput=document.querySelector('[name="access_key"]');
+        if(keyInput) keyInput.value=d.contact.web3forms_key;
+      }
+    }
+
+  }catch(e){console.log('CMS content not loaded, using defaults:',e)}
+}
+
+// ─── NAV SCROLL ───
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
+
+// ─── MOBILE MENU ───
+const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobileMenu'),mobileClose=document.getElementById('mobileClose');
+hamburger.addEventListener('click',()=>mobileMenu.classList.add('open'));
+mobileClose.addEventListener('click',()=>mobileMenu.classList.remove('open'));
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
+
+// ─── HERO SLIDER ───
+let currentSlide=0,slideInterval;
+function initSlider(){
+  clearInterval(slideInterval);
+  const slides=document.querySelectorAll('.hero-slide'),dots=document.querySelectorAll('.slider-dots button');
+  currentSlide=0;
+  function goToSlide(n){
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide=(n+slides.length)%slides.length;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
+  slideInterval=setInterval(()=>goToSlide(currentSlide+1),5000);
+  dots.forEach(d=>d.addEventListener('click',function(){clearInterval(slideInterval);goToSlide(+this.dataset.slide);slideInterval=setInterval(()=>goToSlide(currentSlide+1),5000)}));
+}
+initSlider();
+
+// ─── SCROLL REVEAL ───
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target)}});
+},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+// ─── PRODUCT FILTER ───
+function initProductFilter(){
+  const filterBtns=document.querySelectorAll('.products-filters button');
+  const productCards=document.querySelectorAll('.product-card');
+  filterBtns.forEach(btn=>{
+    btn.addEventListener('click',function(){
+      filterBtns.forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      const filter=this.dataset.filter;
+      productCards.forEach(card=>{
+        if(filter==='all'||card.dataset.category===filter){
+          card.style.display='';card.style.animation='fadeUp .5s forwards';
+        }else{card.style.display='none'}
+      });
+    });
+  });
+}
+initProductFilter();
+
+// ─── SMOOTH SCROLL ───
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const target=document.querySelector(this.getAttribute('href'));
+    if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
+});
+
+// ─── FORM HANDLING (Web3Forms API) ───
+document.getElementById('quoteForm').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=this.querySelector('.btn-submit');
+  const result=document.getElementById('formResult');
+  const original=btn.innerHTML;
+
+  // Validate access key
+  const accessKey=this.querySelector('[name="access_key"]').value;
+  if(!accessKey||accessKey==='YOUR_ACCESS_KEY_HERE'){
+    result.style.display='block';
+    result.style.color='var(--c-accent)';
+    result.innerHTML='⚠ Form not configured yet. Please set up your Web3Forms access key.';
+    return;
+  }
+
+  btn.innerHTML='Sending...';btn.disabled=true;btn.style.opacity='.7';
+  result.style.display='none';
+
+  try{
+    const formData=new FormData(this);
+    // Add sample checkbox as readable text
+    if(!formData.get('sample_requested')) formData.set('sample_requested','No');
+
+    const res=await fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      body:formData
+    });
+    const data=await res.json();
+
+    if(data.success){
+      btn.innerHTML='&#10003; Inquiry Sent Successfully!';
+      btn.style.background='var(--c-success)';btn.style.opacity='1';
+      result.style.display='block';
+      result.style.color='var(--c-success)';
+      result.innerHTML='Thank you! We will respond within 12 hours.';
+      this.reset();
+      // Restore access key after reset
+      this.querySelector('[name="access_key"]').value=accessKey;
+      setTimeout(()=>{btn.innerHTML=original;btn.style.background='';btn.disabled=false;result.style.display='none'},5000);
+    }else{
+      throw new Error(data.message||'Submission failed');
+    }
+  }catch(err){
+    btn.innerHTML=original;btn.style.opacity='1';btn.disabled=false;
+    result.style.display='block';
+    result.style.color='#c0392b';
+    result.innerHTML='Something went wrong. Please try again or email us directly.';
+    console.error('Form error:',err);
+  }
+});
+
+// ─── i18n SYSTEM ───
+const i18n={
+  en:{},
+  zh:{
+    'nav.home':'首页','nav.products':'产品','nav.cases':'案例','nav.about':'关于','nav.contact':'联系','nav.quote':'获取报价',
+    'hero.badge':'FSC & ISO 9001 认证制造商','hero.title':'高端定制包装，<em>匠心</em>呈现您的品牌',
+    'hero.sub':'我们设计和制造环保定制包装，提升您的品牌体验。从概念到交付，每一个包装盒都诉说您的故事。',
+    'hero.stat1':'年经验','hero.stat2':'月产量(个)','hero.stat3':'最低起订量',
+    'hero.cta1':'免费获取报价 <span>&rarr;</span>','hero.cta2':'探索产品',
+    'adv.tag':'为什么选择我们','adv.title':'以专业为基，以可持续为驱','adv.desc':'三大核心优势，让EcoPack Studio成为全球品牌的信赖伙伴。',
+    'adv.card1.title':'10年以上工厂经验','adv.card1.desc':'十年精密制造，服务超2,000个全球品牌。经验丰富的团队将您的愿景转化为卓越包装。',
+    'adv.card2.title':'100%环保材料','adv.card2.desc':'FSC认证纸张、大豆基油墨、可降解涂层。每一种材料的选择都旨在保护品牌声誉和地球未来。',
+    'adv.card3.title':'低起订量 & 快速交付','adv.card3.desc':'最低100件起订。打样3-5个工作日，大货10-15天。以您的业务节奏快速响应。',
+    'prod.tag':'我们的产品','prod.title':'满足各种需求的定制包装方案',
+    'prod.filter.all':'全部','prod.filter.kraft':'牛皮纸','prod.filter.gift':'礼品盒','prod.filter.folding':'折叠盒','prod.filter.magnetic':'磁扣盒','prod.filter.corrugated':'快递盒',
+    'cases.tag':'客户案例','cases.title':'值得信赖的品牌选择','cases.desc':'精选项目，展示我们的工艺和对卓越的承诺。',
+    'about.tag':'关于我们','about.title':'匠心与良知铸就的工厂',
+    'about.p1':'创立十余年，EcoPack Studio已从小型工作坊成长为服务北美、欧洲和亚太客户的全规模包装制造商。',
+    'about.p2':'我们相信包装是品牌与客户之间的第一个实体触点。这就是为什么我们生产的每一个包装盒都旨在创造惊喜——以可持续的方式。',
+    'about.p3':'我们8,000平方米的工厂配备先进的印刷、模切和后加工设备，由120多名技术工匠精心操作。',
+    'about.team.title':'包装背后的团队',
+    'contact.tag':'联系我们','contact.title':'让我们一起创造美好',
+    'contact.info.title':'准备好升级您的包装了吗？','contact.info.desc':'无论您有详细的规格书还是初步想法，我们的团队都在这里帮您实现。联系我们，12小时内回复。',
+    'form.title':'获取免费报价','form.desc':'填写以下表单，我们将在12小时内回复详细方案。',
+    'form.name':'您的姓名 *','form.email':'邮箱地址 *','form.company':'公司名称','form.qty':'数量（件）','form.product':'产品需求 *','form.sample':'我需要打样（3-5个工作日）','form.submit':'发送询价 &rarr;'
+  }
+};
+
+document.getElementById('langSwitcher').addEventListener('change',function(){
+  const lang=this.value;
+  document.documentElement.setAttribute('data-lang',lang);
+  if(lang==='en'){location.reload();return;}
+  const dict=i18n[lang];
+  if(!dict)return;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key=el.dataset.i18n;
+    if(dict[key]){el.innerHTML=dict[key]}
+  });
+});
+
+// ─── LOAD CMS CONTENT ON PAGE LOAD ───
+loadCMSContent();
+</script>
+</body>
+</html>
