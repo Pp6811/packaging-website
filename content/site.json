@@ -1,28 +1,37 @@
 {
   "brand": {
-    "name": "EcoPack Studio",
+    "name": "Qingdao Longyuda Packaging Co., Ltd.",
     "tagline": "Premium Custom Packaging, Crafted for Your Brand",
-    "email": "hello@ecopackstudio.com",
-    "phone": "+86 138-0000-0000",
-    "address": "Shenzhen, Guangdong, China"
+    "email": "1354661390@qq.com",
+    "phone": "+86 133-6122_6888",
+    "address": "shandong, qingdao, China"
   },
   "hero": {
-    "badge": "FSC & ISO 9001 Certified Manufacturer",
-    "title": "Premium Custom Packaging, <em>Crafted</em> for Your Brand",
-    "subtitle": "We design and manufacture eco-friendly custom packaging that elevates your brand experience. From concept to delivery, every box tells your story.",
-    "stat1_num": "10+",
-    "stat1_label": "Years Experience",
-    "stat2_num": "50K+",
-    "stat2_label": "Boxes Monthly",
-    "stat3_num": "100",
-    "stat3_label": "MOQ (pcs)",
     "cta1": "Get a Free Quote",
     "cta2": "Explore Products",
     "slides": [
-      { "image": "https://images.unsplash.com/photo-1607082349566-187342175e2f?w=1920&q=80", "alt": "Premium custom packaging boxes displayed elegantly" },
-      { "image": "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=1920&q=80", "alt": "Eco-friendly kraft paper packaging" },
-      { "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1920&q=80", "alt": "Luxury gift box manufacturing" }
-    ]
+      {
+        "image": "https://images.unsplash.com/photo-1607082349566-187342175e2f?w=1920&q=80",
+        "alt": "Premium custom packaging boxes displayed elegantly"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=1920&q=80",
+        "alt": "Eco-friendly kraft paper packaging"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1920&q=80",
+        "alt": "Luxury gift box manufacturing"
+      }
+    ],
+    "badge": "FSC & ISO 9001 Certified Manufacturer",
+    "stat1_num": "10+",
+    "stat2_num": "50K+",
+    "stat3_num": "100",
+    "stat1_label": "Years Experience",
+    "stat2_label": "Boxes Monthly",
+    "stat3_label": "MOQ (pcs)",
+    "subtitle": "We design and manufacture eco-friendly custom packaging that elevates your brand experience. From concept to delivery, every box tells your story.",
+    "title": "Premium Custom Packaging, <em>Crafted</em> for Your Brand"
   },
   "advantages": {
     "tag": "Why Choose Us",
@@ -53,7 +62,12 @@
         "desc": "Natural, rustic appeal with superior durability. Fully customizable with embossing, foil stamping, or full-color printing.",
         "category": "kraft",
         "badge": "Best Seller",
-        "tags": ["Beauty", "Candles", "Food", "Retail"],
+        "tags": [
+          "Beauty",
+          "Candles",
+          "Food",
+          "Retail"
+        ],
         "image": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80"
       },
       {
@@ -62,7 +76,11 @@
         "desc": "Rigid construction with premium art paper wrapping. Velvet inserts, magnetic closure, and ribbon options available.",
         "category": "gift",
         "badge": "Premium",
-        "tags": ["Jewelry", "Cosmetics", "Premium Gifts"],
+        "tags": [
+          "Jewelry",
+          "Cosmetics",
+          "Premium Gifts"
+        ],
         "image": "https://images.unsplash.com/photo-1549465220-1a8b9238f760?w=800&q=80"
       },
       {
@@ -71,7 +89,11 @@
         "desc": "Cost-effective and space-efficient. Perfect for retail shelves with vibrant full-color offset or digital printing.",
         "category": "folding",
         "badge": "",
-        "tags": ["Food", "Pharma", "Electronics"],
+        "tags": [
+          "Food",
+          "Pharma",
+          "Electronics"
+        ],
         "image": "https://images.unsplash.com/photo-1589782182703-2aaa69037b5b?w=800&q=80"
       },
       {
@@ -80,7 +102,11 @@
         "desc": "Sophisticated flip-top design with hidden magnetic closure. Creates an unforgettable unboxing moment for your customers.",
         "category": "magnetic",
         "badge": "",
-        "tags": ["Luxury", "Wine", "Tech"],
+        "tags": [
+          "Luxury",
+          "Wine",
+          "Tech"
+        ],
         "image": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=800&q=80"
       },
       {
@@ -89,7 +115,11 @@
         "desc": "Durable shipping protection meets branded experience. Custom printed inside and out for a memorable delivery.",
         "category": "corrugated",
         "badge": "",
-        "tags": ["E-commerce", "Subscription", "D2C"],
+        "tags": [
+          "E-commerce",
+          "Subscription",
+          "D2C"
+        ],
         "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80"
       },
       {
@@ -98,7 +128,11 @@
         "desc": "Minimalist sleeve packaging made from 100% recycled kraft. The ultimate sustainable packaging choice for conscious brands.",
         "category": "kraft",
         "badge": "Eco",
-        "tags": ["Skincare", "Soap", "Tea"],
+        "tags": [
+          "Skincare",
+          "Soap",
+          "Tea"
+        ],
         "image": "https://images.unsplash.com/photo-1531956531700-dc0ee0f1f9a5?w=800&q=80"
       }
     ]
@@ -134,13 +168,29 @@
     "p1": "Founded over a decade ago, EcoPack Studio has grown from a small workshop into a full-scale packaging manufacturer serving clients across North America, Europe, and Asia-Pacific.",
     "p2": "We believe packaging is the first physical touchpoint between a brand and its customer. That's why every box we produce is designed to create a moment of delight — sustainably.",
     "p3": "Our 8,000 sqm facility houses state-of-the-art printing, die-cutting, and finishing equipment, operated by a team of 120+ skilled craftspeople committed to quality in every detail.",
-    "certs": ["FSC Certified", "ISO 9001", "SEDEX"],
+    "certs": [
+      "FSC Certified",
+      "ISO 9001",
+      "SEDEX"
+    ],
     "factory_image": "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80",
     "team": [
-      { "name": "Team Member", "role": "Founder & CEO" },
-      { "name": "Team Member", "role": "Head of Design" },
-      { "name": "Team Member", "role": "Production Manager" },
-      { "name": "Team Member", "role": "Client Success" }
+      {
+        "name": "Team Member",
+        "role": "Founder & CEO"
+      },
+      {
+        "name": "Team Member",
+        "role": "Head of Design"
+      },
+      {
+        "name": "Team Member",
+        "role": "Production Manager"
+      },
+      {
+        "name": "Team Member",
+        "role": "Client Success"
+      }
     ]
   },
   "contact": {
